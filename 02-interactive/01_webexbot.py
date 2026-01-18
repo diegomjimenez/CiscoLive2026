@@ -1,0 +1,26 @@
+"""
+Cisco Live 2026 - LABCOL-1007: Building Your First Webex Bot
+
+- Diego Manuel Jimenez Moreno
+"""
+
+import os
+
+# Load environment variables from the .env file.
+load_dotenv()
+
+bot_token = os.getenv("BOT_TOKEN")
+
+from webex_bot.commands.echo import EchoCommand
+from webex_bot.webex_bot import WebexBot
+
+# Create a Bot Object
+bot = WebexBot(teams_bot_token=bot_token,
+               bot_name="CiscoLive2026",
+               include_demo_commands=True)
+
+# Add new commands for the bot to listen out for.
+bot.add_command(EchoCommand())
+
+# Call `run` for the bot to wait for incoming messages.
+bot.run()
