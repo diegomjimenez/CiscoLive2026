@@ -27,5 +27,5 @@ def list_people(access_token, limit):
     else:
         raise Exception(f"Failed to obtain people: {response.status_code} - {response.text}")
 
-links = list_people(ACCESS_TOKEN, 2)
+links = list_people(access_token, 2)
 print(f"{links}")
