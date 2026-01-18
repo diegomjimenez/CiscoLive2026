@@ -57,9 +57,9 @@ from webex_bot.commands.echo import EchoCommand
 from webex_bot.webex_bot import WebexBot
 
 # Create a Bot Object
-bot = WebexBot(teams_bot_token=BOT_TOKEN,
+bot = WebexBot(teams_bot_token=bot_token,
                bot_name="CiscoLive2026,
-               approved_domains=DOMAIN,
+               approved_domains=domain,
                include_demo_commands=True)
 
 # Add new commands for the bot to listen out for.
