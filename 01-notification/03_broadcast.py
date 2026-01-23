@@ -32,4 +32,4 @@ def send_teams_message(bot_token: str, message: str, person_email: str):
 webex = WebexAPI(access_token=access_token)
 all_people = webex.people.list()
 for person in all_people:
-    send_teams_message(BOT_TOKEN, f"Hello {person.displayName}!", person.emails[0])
+    send_teams_message(bot_token, f"Hello {person.displayName}!", person.emails[0])
