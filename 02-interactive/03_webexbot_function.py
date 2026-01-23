@@ -61,7 +61,7 @@ from webex_bot.webex_bot import WebexBot
 bot = WebexBot(teams_bot_token=bot_token,
                bot_name="CiscoLive2026,
                approved_domains=domain,
-               include_demo_commands=True)
+               include_demo_commands=False)
 
 # Add new commands for the bot to listen out for.
 bot.add_command(AutoProvisioning())
