@@ -5,6 +5,7 @@ Cisco Live 2026 - LABCOL-1007: Building Your First Webex Bot
 """
 
 import os
+from dotenv import load_dotenv
 
 # Load environment variables from the .env file.
 load_dotenv()
