@@ -20,8 +20,5 @@ bot = WebexBot(teams_bot_token=bot_token,
                bot_name="CiscoLive2026",
                include_demo_commands=True)
 
-# Add new commands for the bot to listen out for.
-bot.add_command(EchoCommand())
-
 # Call `run` for the bot to wait for incoming messages.
 bot.run()
