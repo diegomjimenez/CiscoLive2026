@@ -28,7 +28,7 @@ card = {
                             {
                                 "type": "Image",
                                 "style": "Person",
-                                "url": "https://cl-wil.ciscolabs.com/f4d163d682/template_assets/HomePage_Event_logo.png",
+                                "url": "https://securitydocs.cisco.com/Site%20images%20for%20Docs%20portal/Initial%20site%20images/Temp_Cisco-logo.png",
                                 "size": "Medium",
                                 "height": "50px"
                             }
