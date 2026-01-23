@@ -13,7 +13,7 @@ load_dotenv()
 
 access_token = os.getenv("ACCESS_TOKEN")
 
-webex = WebexAPI(access_token=ACCESS_TOKEN)
+webex = WebexAPI(access_token=access_token)
 
 try:
   all_people = webex.people.list()
