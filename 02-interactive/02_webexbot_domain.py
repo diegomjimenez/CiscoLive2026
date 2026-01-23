@@ -21,3 +21,6 @@ bot = WebexBot(teams_bot_token=bot_token,
                bot_name="CiscoLive2026",
                approved_domains=domain,
                include_demo_commands=True)
+
+# Call `run` for the bot to wait for incoming messages.
+bot.run()
