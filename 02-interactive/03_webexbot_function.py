@@ -48,7 +48,7 @@ class ProvisionCallback(Command):
     def __init__(self):
         super().__init__(
             card_callback_keyword="provision_callback",
-            delete_previous_message=False)
+            delete_previous_message=True)
 
     def execute(self, message, attachment_actions, activity):
         return quote_info(attachment_actions.inputs.get("mac_address"))
