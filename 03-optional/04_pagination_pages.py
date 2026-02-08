@@ -25,7 +25,7 @@ def list_people(access_token, url):
     else:
         raise Exception(f"Failed to obtain people: {response.status_code} - {response.text}")
 
-response = list_people(ACCESS_TOKEN, "https://webexapis.com/v1/people?max=2")
+response = list_people(access_token, "https://webexapis.com/v1/people?max=2")
 people = response.json()["items"]
 print("Printing first 2 people:")
 for person in people:
